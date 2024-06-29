@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<header>
+    <img src="./imagens/tituloCoracao.png" alt="Foto_coracao">
+    <h1>AluraGeek</h1>
+</header>
+<main class="todas_sections">
+    <section class="section_produtos">
+        <div class="titulo_produtos">
+            <h1>MEUS PRODUTOS:</h1>
+        </div>
+        <div class="container_produtos" data-lista>
+            <!-- <div class="produto" >
+                <img src="./imagens/gameBoy.png" class="produto_imagem" alt="imagem do produto">
+                <div class="produto_titulo">
+                    <p>Produto</p>
+                </div>
+                <div class="produto_valor">
+                    <strong>
+                        <p>$ 00,00</p>
+                    </strong>
+                    <img src="./imagens/lixoMenor.png" alt="icone da lixeira" data-lixo>
+                </div>
+            </div> -->
+           
+        </div>
+    </section>
+    <section class="section_formulario">
+        <div class="formulario_titulo">
+            <h1>ADICIONAR <span>PRODUTO:</span></h1>
+        </div>
+        <form data-formulario>
+            <div class="formulario_nome">
+                <input type="text" placeholder="nome..." class="input" id="formulario_nome" required data-nome>
+            </div>
+            <div class="formulario_valor" id="formulario_valor">
+                <input type="number" placeholder="valor..." required data-valor step="0.01" min="0.01">
+            </div>
+            <div class="formulario_imagem" id="formulario_imagem" >
+                <input type="text" placeholder="imagem..." required data-url>
+            </div>
+            <div class="formulario_botoes">
+                <button class="botao_guardar botao" type="submit">Guardar</button>
+                <button class="botao_limpar botao" type="clean">Limpar</button>
+            </div>
+        </form>   
+    </section>
+</main>
+<footer>
+    <div class="footer_imagem">
+        <img src="./imagens/tituloCoracao.png" alt="Foto_coracao">
+        <h1>AluraGeek</h1>
+    </div>
+    <p>DESENVOLVIDO POR GUSTAVO JOSÉ </p>
+    <p>ORACLEONE - 2024</p>
+</footer>
+<script src="./js/mostrarProdutos.js" type="module"></script>
+<script src="./js/criarProduto.js" type="module"></script>
+</body>
+</html>

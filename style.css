@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo-roxo: #5300C8;
+    --cor-produto-fundo: #5D04D9;
+    --cor-form: #03318C;
+}
+
+
+h1,
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--cor-produto-fundo);
+    padding: 20px;
+    box-shadow: 0px 7px 0.9px 0px #00000040;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 30px;
+    gap: 5rem;
+}
+
+.section_produtos {
+    width: 758px;
+    padding: 40px
+}
+
+.titulo_produtos h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 0px 0px 40px 0px;
+}
+
+.container_produtos {
+    width: 678px;
+    height: 711px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 0px 20px;
+    box-shadow: -12px 10px 5.8px 0px #00000040;
+    overflow-y: scroll;
+}
+
+.produto {
+    width: 196px;
+    height: 258px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5px;
+    gap: 10px;
+    margin-bottom: 78px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: var(--cor-produto-fundo);
+    font-size: 15px;
+    box-shadow: -5px 6px 3.3px 0px #00000040;
+}
+
+.produto_imagem {
+    width: 176px;
+    height: 176px;
+}
+
+.produto_valor {
+    display: flex;
+    justify-content: space-between;
+}
+
+[data-lixo] {
+    cursor: pointer;
+}
+
+.section_formulario {
+    width: 472px;
+    height: 517px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.formulario_titulo {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form input {
+    border-style: none;
+    width: 392px;
+    height: 58px;
+    border-radius: 25px;
+    outline: 3px solid var(--cor-form);
+    font-style: var(--cor-form);
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+form input::placeholder {
+    color: var(--cor-form);
+}
+
+/* para tirar o style do input=number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input .formulario_valor {
+    outline-style: none;
+}
+
+.formulario_botoes {
+    display: flex;
+    gap: 13px;
+}
+
+.botao {
+    width: 188px;
+    height: 55px;
+    border-style: none;
+    border: 3px solid var(--cor-form);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.botao_guardar {
+    color: white;
+    background-color: var(--cor-form);
+}
+
+.botao_limpar {
+    color: var(--cor-form);
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--cor-produto-fundo);
+    gap: 10px;
+    box-shadow: 0px -10px 9.5px 0px #00000040;
+    padding: 64px;
+}
+
+.footer_imagem {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 768px;
+    }
+
+    main {
+        width: 768px;
+        /* display:flex;
+    flex-direction: column-reverse;
+    align-items: center; */
+    }
+
+    .container_produtos {
+        width: 678px;
+        height: 678px;
+        /* overflow-x: scroll; */
+        justify-content: center;
+    }
+
+    footer {
+        width: 768px;
+    }
+}
+
+/* 
+.container_produtos{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    width: 900px;
+    height: 971px;
+    box-sizing: border-box;
+    box-shadow: -12px 10px 5.8px 0px #00000040;
+    padding: 25px;
+    border: 2px solid red;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    padding: 5px;
+    gap: 10px;
+    border: 4px solid  black;
+    border-radius: 10px;
+    background-color:var(--cor-produto-fundo);
+    font-family:"IBM Plex Mono", monospace;
+    font-size: 15px;
+    width: 196px;
+    height: 258px;
+    box-shadow: -5px 6px 3.3px 0px #00000040;
+}
+.produto_valor{
+    display: flex;
+    justify-content: space-between;
+}
+.section_formulario{
+    width: 30%;
+    border: 2px solid green;
+}
+.formulario_titulo{
+    text-align: center;
+}
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+} */
