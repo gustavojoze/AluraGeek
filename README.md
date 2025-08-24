@@ -1,14 +1,14 @@
 # 🕹️ AluraGeek
 
-O **AluraGeek** é uma aplicação web desenvolvida como desafio da formação **Oracle Next Education - ONE + Alura**.  
-O objetivo do projeto é criar uma **loja online fictícia de produtos geek**, permitindo o cadastro, edição e exclusão de produtos, além da listagem na tela inicial.
+O projeto consiste em uma loja geek, permitindo o cadastro e a exclusão de produtos, além da listagem na tela inicial.
 
 ---
 ## 🚀 Tecnologias Utilizadas
 
 - **HTML5** 🟠  
 - **CSS3** 🔵  
-- **JavaScript (ES6+)** 🟡  
+- **JavaScript (ES6+)** 🟡
+- **APIRest utilizando o MockAPI** 🟢
 ---
 
 ## 📂 Estrutura do Projeto
